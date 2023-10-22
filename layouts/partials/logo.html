@@ -1,3 +1,7 @@
 <a href="/">
+    {{ with .Site.Params.site_logo }}
     <img src="{{ .Site.Params.site_logo }}" alt="Logo of {{ .Title }}" srcset="">
+    {{ else }}
+    {{ .Site.Params.sitename }}
+    {{ end }}
 </a>

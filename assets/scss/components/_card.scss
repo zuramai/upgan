@@ -5,7 +5,6 @@
         padding-top: 65%; // 16:9 Ratio
         position: relative;
         object-fit: cover;
-
         .card-thumbnail-image {
             position: absolute;
             top: 0;
@@ -52,7 +51,7 @@
                 font-weight: 500;
             }
             .date {
-                color: #666;
+                color: #7d4949;
                 font-size: .8rem;
             }
         }
@@ -61,38 +60,20 @@
         font-size: 2rem;
         margin-bottom: .5rem;
         font-weight: 600;
-        line-height: 2.5rem;
         
         a {
             color: $heading-color;
         }
     }
-    &.card-horizontal-mini {
-        .author {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        .category {
-            font-weight: 400;
-            flex: 1;
-            text-transform: uppercase;
-        }
-        .card-thumbnail {
-            padding-top: 65%;
-        }
-        .card-title {
-            font-size: 1.3rem;
-            line-height: 1.6rem;
-            margin-bottom: 0;
-        }
-        .date {
-            font-size: .7rem;
-        }
-        .author-name {
-            font-weight: 400;
-            font-size: .8rem;
-        }
+    .card-title-sm a {
+        color: rgb(75, 75, 75);
+        line-height: 1.7rem;
+        font-size: 1.1rem;
+    }
+    .author {
+        font-size: .925rem;
+        margin-top: .4rem;
+        color: #a4a2a2;
     }
     .summary {
         color: #707070;
