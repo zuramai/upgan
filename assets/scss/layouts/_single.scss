@@ -1,0 +1,101 @@
+main#content {
+    font-family: $font-family-content;
+    .single-header {
+        text-align: left;
+
+        h1 {
+            font-size: clamp(32px,4vw,44px);
+        }
+    }
+    .thumbnail-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .thumbnail {
+        position: relative;
+        padding-top: 56%;
+    }
+    
+    .tags {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: .5rem;
+        .tag {
+            list-style: none;
+            a {
+                padding: .5rem 1rem;
+                display: inline-block;
+                background-color: #f2f2f2;
+                color: $body-color;
+                border-radius: .3rem;
+            }
+        }
+    }
+}
+.the-content {
+    margin-bottom: 5rem;
+    h1,h2,h3,h4,h5,h6 {
+        font-family: $font-family-content-header;
+    }
+    img {
+        width: auto;
+        &:not(.image-not-full) {
+            width: 100%;
+        }
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    p, li, table {
+        color: $article-content-color;
+        font-size: clamp($font-size-mobile,3vw,$font-size-base);
+        line-height: clamp(29px,4vw, 2.2rem);
+        letter-spacing: 0.005em;
+    }
+    p {
+        margin-top: 1.2em;
+    }
+    ul, ol {
+        margin-left: 1rem;
+    }
+    li {
+        margin-top: .2em;
+        padding-left: 1rem;
+        &::marker {
+            color: $primary;
+        }
+    }
+    time {
+        text-align: center;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h1,h2 {
+        margin-top: 3rem;
+
+        & + p {
+            margin-top: 1.5rem;
+        }
+    }
+    h3,h4,h5 {
+        margin-top: 1.5rem;
+    }
+}
+.image-wrapper {
+    margin: 0 -10%;
+}
+@media screen and (max-width: 767px) {
+    .image-wrapper {
+        margin: 0;
+    }
+}

@@ -1,0 +1,26 @@
+#content {
+    blockquote {
+        padding: 2.5rem clamp(2rem, 2vw, 4rem);
+        position: relative;
+        background-color: $blockquote-bg;
+        border-radius: .4rem;
+        font-size: $font-size-base;
+        line-height: 2rem;
+        letter-spacing: .2px;
+        color: #6f6e6e;
+
+        h1,h2,h3,h4,h5,h6 {
+            margin: 0 !important;
+        }
+        * {
+            color: rgba(4, 5, 10, 0.589) !important;
+        }
+        .quote__icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            opacity: .3
+        }
+    }
+    
+}

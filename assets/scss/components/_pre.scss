@@ -1,0 +1,22 @@
+pre, pre[class*="language-"] {
+    margin-top: 0;
+    margin-bottom: 1.77778rem;
+    padding: .75rem;
+    border: 1px solid rgba(51,51,51,.1);
+    background: #f9f9fa;
+    overflow: auto;
+    border-radius: .4rem;
+}
+p > code {
+    background: #f7f7ff;
+    color: rgb(54, 54, 56);
+    padding: .1rem .3rem .2rem;
+}
+h1,h2,h3,h4,h5,h6  {
+    code {
+        font-size: inherit;
+        background: #ececec;
+        color: #6969ff;
+        padding: .1rem .3rem .2rem;
+    }
+}

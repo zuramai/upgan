@@ -1,0 +1,21 @@
+{{- $paginator := .Paginator }}
+{{- if gt $paginator.TotalPages 1 }}
+<nav aria-label="Page navigation">
+	<ul class="paginator">
+		{{- if $paginator.HasPrev }}
+			<li class="control"><a class="page-link" href="{{ $paginator.Prev.URL }}">Prev</a></li>
+		{{- end }}
+		
+		<ul class="pagination">
+			
+			{{- range first 4 $paginator.Pagers }}
+				<li class="page-item {{ if eq . $paginator }} active{{ end }}"><a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a></li>
+			{{- end }}
+		</ul>
+
+		{{- if $paginator.HasNext -}}
+			<li class="control"><a class="page-link" href="{{ $paginator.Next.URL }}">Next</a></li>
+		{{- end }}
+	</ul>
+</nav>
+{{- end }}
