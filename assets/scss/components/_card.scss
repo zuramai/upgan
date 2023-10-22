@@ -1,61 +1,6 @@
 .card {
     margin-bottom: 1.5rem;
-    .card-thumbnail {
-        width: 100%;
-        padding-top: 65%; // 16:9 Ratio
-        position: relative;
-        object-fit: cover;
-        .card-thumbnail-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            right: 0;
-            bottom: 0;
-            border-radius: .3rem;
-            width: 100%;
-            height: 100%;
-        }
-    }
-    .card-right {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-    }
-
-    &.card-horizontal {
-        .date {
-            font-size: .9rem;
-            margin-bottom: 1rem;
-            color: #707480;
-
-        }
-        .summary {
-            flex: 1;
-            font-weight: 400;
-            color: #707480;
-        }
-        .author {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            img {
-                margin-right: 1rem;
-                width: 40px;
-                object-fit: cover;
-                height: 40px;
-                border-radius: 50%;
-            }
-            .author-detail h6 {
-                font-size: 1rem;
-                font-weight: 500;
-            }
-            .date {
-                color: #7d4949;
-                font-size: .8rem;
-            }
-        }
-    }
+    
     .card-title {
         font-size: 2rem;
         margin-bottom: .5rem;
@@ -66,9 +11,12 @@
         }
     }
     .card-title-sm a {
-        color: rgb(75, 75, 75);
+        color: rgb(101, 101, 101);
         line-height: 1.7rem;
         font-size: 1.1rem;
+        &:hover {
+            color: rgb(29, 29, 29);
+        }
     }
     .author {
         font-size: .925rem;
@@ -88,11 +36,6 @@
             color: $primary;
         }
     }
-    &.card-vertical {
-        .card-thumbnail {
-            margin-bottom: 1rem;
-        }
-    }
     &.card-vertical-md {
         .card-title {
             font-size: 1.5rem;
@@ -107,17 +50,6 @@
         }
         .card-thumbnail {
             padding-top: 57.5%;
-        }
-    }
-    @media screen and (max-width: 996px) {
-        .card-title {
-            margin-top: .5rem;
-        }
-        &.card-horizontal-mini {
-            .card-title {
-                font-size: 1.5rem;
-                line-height: 2rem;
-            }
         }
     }
 }

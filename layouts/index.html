@@ -4,7 +4,7 @@
     <!-- First Section -->
     <section class='first-section'>
         <div class="row">
-            <div class="col-lg-5 col-12 mx-auto">
+            <div class="col-lg-6 col-12 mx-auto">
                 <h2 class='latest-articles mb-8'>My Writing</h2>
                 {{ range (.Paginate ( first 15 .Pages.ByTitle )).Pages }}
                     {{ partial "card/card-text.html" . }}
