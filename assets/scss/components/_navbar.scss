@@ -4,6 +4,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        align-items: center;
+        max-width: 768px;
+    }
+    .menu {
+        flex: none;
     }
     .btn-toggler {
         display: none;
@@ -11,6 +16,7 @@
     ul {
         display: flex;
         align-items: center;
+        margin-bottom: 0;
         li {
             margin: 0 1rem;
             list-style: none;       
@@ -56,6 +62,11 @@
         }
     }
     .logo {
+        a {
+            color: black;
+            font-weight: bold;
+            font-style: italic;
+        }
         img {
             height: 50px;
         }
