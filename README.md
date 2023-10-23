@@ -1,7 +1,8 @@
-# Hugoblog
-Hugoblog is responsive, simple, and clean that very fit for your personal blog based on Hugo Theme Static Site Generator (SSG)
+# Upgan
+Upgan is responsive, simple, and clean that very fit for your personal blog based on Hugo Theme Static Site Generator (SSG)
 
-![Screenshot](https://github.com/zuramai/hugoblog/blob/main/images/tn.png?raw=true)
+<img width="1201" alt="Screenshot 2023-10-23 at 14 28 02" src="https://github.com/zuramai/upgan/assets/45036724/668e0ff8-22d6-4fe1-92ff-1ce318ed4a19">
+
 
 Click **[here](https://blog.saugi.me/)** for live demo.
 
