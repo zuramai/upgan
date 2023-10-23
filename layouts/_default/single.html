@@ -23,12 +23,12 @@
         
                     <div class="col-md-10 col-12 mx-auto">
                         {{ if .Params.featured_image }}
+                        {{ with .Resources.GetMatch (.Params.featured_image) }}
                             <div class="thumbnail">
-                                {{ with .Resources.GetMatch (.Params.featured_image) }}
                                     {{ $thumb := .Resize "800x" }}
                                     <img src="{{ $thumb.Permalink }}" class='thumbnail-image' alt="{{ .Title }}">
+                                </div>
                                 {{ end }}
-                            </div>
                             {{ end }}
                         <img src="" alt="" srcset="">
                     </div>
