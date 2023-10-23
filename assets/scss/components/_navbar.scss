@@ -22,10 +22,14 @@
             list-style: none;       
             a {
                 font-size: 1rem;
-                color: $body-color;
+                color: $main-link-color;
+
+                &:hover {
+                    color: $main-link-color-hover;
+                }
 
                 &.active {
-                    color: $primary;
+                    color: $main-link-color-hover;
                 }
             }
         }
@@ -63,7 +67,7 @@
     }
     .logo {
         a {
-            color: black;
+            color: $main-link-color;
             font-weight: bold;
             font-style: italic;
         }

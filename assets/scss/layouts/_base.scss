@@ -13,6 +13,7 @@ a {
     color: $link-color;
     transition: all .2s;
     outline: none;
+    
     &:hover {
         color: $link-color-hover;
     }

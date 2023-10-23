@@ -11,11 +11,11 @@
         }
     }
     .card-title-sm a {
-        color: rgb(101, 101, 101);
+        color: $main-link-color;
         line-height: 1.7rem;
         font-size: 1.1rem;
         &:hover {
-            color: rgb(29, 29, 29);
+            color: $main-link-color-hover;
         }
     }
     .author {
