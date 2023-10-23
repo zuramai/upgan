@@ -2,6 +2,10 @@ main#content {
     font-family: $font-family-content;
     .single-header {
         text-align: left;
+        h1 {
+            margin: 1rem 0;
+            line-height: clamp(48px, 4vw, 88px);
+        }
 
         h1 {
             font-size: clamp(32px,4vw,44px);
