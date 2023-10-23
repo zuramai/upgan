@@ -57,6 +57,7 @@ h5 {
 .container {
     width: 100%;
     padding: 0 1rem;
+    max-width: 768px;
     margin: 0 auto;
 }
 blockquote, figcaption, ol, p, pre, table, ul {
@@ -79,10 +80,10 @@ blockquote, figcaption, ol, p, pre, table, ul {
 .col-12 { flex: none; width: calc(100% * 12 / 12) }
 
 
+@media screen and (min-width: 576px) {
+    .col-sm-8 { flex: none; width: calc(100% * 8 / 12) }
+}
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
     .col-md-1 { flex: none; width: calc(100% * 1 / 12) }
     .col-md-2 { flex: none; width: calc(100% * 2 / 12) }
     .col-md-3 { flex: none; width: calc(100% * 3 / 12) }
@@ -97,9 +98,6 @@ blockquote, figcaption, ol, p, pre, table, ul {
     .col-md-12 { flex: none; width: calc(100% * 12 / 12) }
 }
 @media screen and (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
     .col-lg-1 { flex: none; width: calc(100% * 1 / 12) }
     .col-lg-2 { flex: none; width: calc(100% * 2 / 12) }
     .col-lg-3 { flex: none; width: calc(100% * 3 / 12) }
@@ -114,9 +112,6 @@ blockquote, figcaption, ol, p, pre, table, ul {
     .col-lg-12 { flex: none; width: calc(100% * 12 / 12) }
 }
 @media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
     .col-xl-1 { flex: none; width: calc(100% * 1 / 12) }
     .col-xl-2 { flex: none; width: calc(100% * 2 / 12) }
     .col-xl-3 { flex: none; width: calc(100% * 3 / 12) }
@@ -129,9 +124,4 @@ blockquote, figcaption, ol, p, pre, table, ul {
     .col-xl-10 { flex: none; width: calc(100% * 10 / 12) }
     .col-xl-11 { flex: none; width: calc(100% * 11 / 12) }
     .col-xl-12 { flex: none; width: calc(100% * 12 / 12) }
-}
-@media screen and (min-width: 1400px) {
-    .container {
-        max-width: 1320px;
-    }
 }
