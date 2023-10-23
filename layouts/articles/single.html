@@ -7,12 +7,9 @@
 <main id="content">
     <div class='container'>
         <!-- Renders the li.html content view for each content/posts/*.md -->
-        <div class="row">
-            
-
             <!-- Single Heading -->
-            <div class="single-header col-md-8 col-12 mx-auto">
-                <time datetime="{{ .Date }}">Published {{ .Date.Format "January 2, 2006" }}</time>
+            <div class="single-header  mx-auto">
+                <time datetime="{{ .Date }}" class="text-gray">Published {{ .Date.Format "January 2, 2006" }}</time>
                 <h1>{{ .Title }}</h1>
                 <ul class="tags">
                     {{ range .Params.tags }}
@@ -21,7 +18,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-10 col-12  mx-auto">
+            <div class=" mx-auto">
                 {{ if .Params.featured_image }}
                     <div class="thumbnail">
                         {{ with .Resources.GetMatch (.Params.featured_image) }}
@@ -33,7 +30,7 @@
                 <img src="" alt="" srcset="">
             </div>
 
-            <div class="col-md-8 col-12 mx-auto">
+            <div class=" mx-auto">
                 <article class="the-content">
                     {{ .Content }}
                 </article>

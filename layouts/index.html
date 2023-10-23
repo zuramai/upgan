@@ -3,10 +3,10 @@
 
     <!-- First Section -->
     <section class='first-section'>
-                {{ range .Paginator.Pages.ByDate.Reverse }}
-                    {{ partial "card/card-text.html" . }}
-                {{ end }}
-                {{ partial "paginator" . }}
+        {{ range .Paginator.Pages.ByDate.Reverse }}
+            {{ partial "card/card-text.html" . }}
+        {{ end }}
+        {{ partial "paginator" . }}
 
     </section>
 
