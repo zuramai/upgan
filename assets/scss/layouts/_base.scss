@@ -8,6 +8,9 @@ html, body {
     font-family: $font-family;
     background-color: $body-bg;
 }
+#app {
+    min-height: 95vh;
+}
 a {
     text-decoration: none;
     color: $link-color;

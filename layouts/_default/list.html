@@ -4,26 +4,20 @@
     <body>
         <div id="app">
             {{- partial "header.html" . -}}
-            <main id="content">
                 <main id="terms">
-                    <div class="terms-header">
-                        <div class="container">
-                            <p>{{.Data.Singular}}</p>
-                            <h1>{{.Data.Term}}</h1>
-                        </div>
-                    </div>
                     <div class="container">
-                        <div class="row ">
-                            <div class="col-lg-9 col-12">
-                                {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
-                                    {{ partial "card/card-horizontal.html" . }}
-                                {{ end }}
-                            </div>
+                        <div class="terms-header">
+                                <h1>{{.Data.Singular}}: {{.Data.Term}}</h1>
                         </div>
-                        {{ partial "paginator" . }}
+                        <div class="container">
+                            {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
+                                {{ partial "card/card-text" . }}
+                            {{ end }}
+                            </div>
+                            {{ partial "paginator" . }}
+                        </div>
                     </div>
                 </main>
-            </main>
             {{- partial "footer.html" . -}}
         </div>
     </body>
