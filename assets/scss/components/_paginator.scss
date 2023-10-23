@@ -1,50 +1,19 @@
 $paginator-padding: .3rem 1rem;
-$paginator-border: 1px solid  #ccc;
-$paginator-radius: .5rem;
+$paginator-border: 1px solid  #797979;
+$paginator-radius: .1rem;
 
 .paginator {
     display: flex;
     list-style: none;
-    justify-content: center;
-    .control {
-        padding: $paginator-padding;
-        border:$paginator-border;
-        border-radius: $paginator-radius;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 1rem;
+    .control a {
+        color: $main-link-color;
         display: block;
-        margin: 0 1rem;
-    }
-}
-
-.pagination {
-    display: flex;
-    list-style: none;
-    .page-item {
-
-        .page-link {
-            padding: $paginator-padding;
-            border: $paginator-border;
-            display: block;
-        }
-
-        &:first-child {
-            .page-link {
-                border-top-left-radius: $paginator-radius;
-                border-bottom-left-radius: $paginator-radius;
-            }
-        }
-        &:last-child {
-            .page-link {
-                border-top-right-radius: $paginator-radius;
-                border-bottom-right-radius: $paginator-radius;
-            }
-        }
-
-        &.active {
-            .page-link {
-                background-color: $primary;
-                color: white;
-                border-color: $primary;
-            }
-        }
+        display: flex;
+        align-items: center;
+        gap: .4rem;
     }
 }

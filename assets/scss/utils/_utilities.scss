@@ -2,6 +2,8 @@
     margin-left: auto;
     margin-right: auto;
 }
+.flex { display: flex; }
+.gap-3 { gap: 1rem }
 .mb-1 { margin-bottom: .4rem !important; }
 .mb-5 { margin-bottom: 1.5rem; }
 .mb-8 { margin-bottom: 2.5rem; }
@@ -10,3 +12,4 @@
 .float-right { float: right }
 .clear-both {clear: both}
 .text-center { text-align: center; }
+.text-muted { color: #b6b6b6 }
