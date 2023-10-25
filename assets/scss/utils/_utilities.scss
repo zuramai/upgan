@@ -14,3 +14,9 @@
 .text-center { text-align: center; }
 .text-muted { color: #b6b6b6 }
 .text-gray { color: $main-link-color }
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: 1fr; }
+
+@media screen and (min-width: 768px) {
+    .grid-cols-md-2 { grid-template-columns: 1fr 1fr; }
+}
