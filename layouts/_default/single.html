@@ -17,7 +17,7 @@
                             {{ end }}
                         </ul>
                     </div>
-        
+                    
                     <div class=" mx-auto">
                         {{ if .Params.featured_image }}
                         {{ with .Resources.GetMatch (.Params.featured_image) }}
@@ -29,6 +29,14 @@
                             {{ end }}
                         <img src="" alt="" srcset="">
                     </div>
+
+                    {{ if .Params.table_of_contents }}
+                        <div class="table-of-contents">
+                            <h2 class="mb-5">Table of Contents</h2>
+                            {{ .TableOfContents }}
+                        </div>
+                    {{ end }}
+
                     <div class=" mx-auto">
                         <div class="the-content">
                             {{ .Content }}

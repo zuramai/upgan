@@ -1,0 +1,16 @@
+.table-of-contents {
+    background-color: rgb(238, 239, 244);
+    padding: 2rem;
+    border-radius: .3rem;
+    ul {
+        padding-left: 1rem;
+        margin: 0;
+    }
+    a {
+        margin-bottom: .3rem;
+        display: block;
+    }
+} 
+#TableOfContents > ul > li > a {
+    font-weight: bold;
+}
