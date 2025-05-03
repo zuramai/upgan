@@ -18,17 +18,17 @@
                         </ul>
                     </div>
                     
+                    {{ if .Params.featured_image }}
                     <div class=" mx-auto">
-                        {{ if .Params.featured_image }}
                         {{ with .Resources.GetMatch (.Params.featured_image) }}
                             <div class="thumbnail">
                                     {{ $thumb := .Resize "800x" }}
                                     <img src="{{ $thumb.Permalink }}" class='thumbnail-image' alt="{{ .Title }}">
                                 </div>
                                 {{ end }}
+                                <img src="" alt="" srcset="">
+                            </div>
                             {{ end }}
-                        <img src="" alt="" srcset="">
-                    </div>
 
                     {{ if .Params.table_of_contents }}
                         <div class="table-of-contents">
