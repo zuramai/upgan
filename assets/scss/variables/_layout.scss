@@ -1,8 +1,9 @@
+@use "sass:color";
 $body-bg:                   #fdfdff;
 $body-color:                rgb(29, 25, 41);
 $article-content-color:     rgb(70, 70, 70);
 $heading-color:             #2d2f3b;
 $link-color:                $primary;
-$link-color-hover:          darken($primary, 20%);
+$link-color-hover:          color.adjust($primary, $lightness: -20%);
 $main-link-color:           rgb(71, 71, 71);
 $main-link-color-hover:     rgb(6, 6, 6);

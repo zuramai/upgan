@@ -1,5 +1,7 @@
+@use "sass:color";
+
 footer {
-    background-color: lighten($color: $primary, $amount: 45%);
+    background-color: color.adjust($primary, $lightness: 45%);
     padding: 1rem 0;
 
     .social-links {
@@ -8,7 +10,7 @@ footer {
             margin-left: 1rem;
         }
         svg {
-            color: transparentize($body-color, .4);
+            color: color.adjust($body-color, $lightness: -40%);
         }
     }
 }
