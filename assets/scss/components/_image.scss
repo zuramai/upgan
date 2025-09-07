@@ -1,0 +1,28 @@
+.horizontal img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+.horizontal-full img {
+    aspect-ratio: 21/9;
+    object-fit: cover;
+}
+.horizontal-full  {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    max-width: none;
+}
+
+figcaption {
+    text-align: center;
+    color: $article-content-color;
+    font-size: 0.85rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 576px) {
+    .horizontal-full img {
+        aspect-ratio: unset;
+    }
+}
