@@ -46,6 +46,10 @@ main#content {
         }
     }
 }
+.table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+}
 .the-content {
     margin-bottom: 5rem;
     h1,h2,h3,h4,h5,h6 {
