@@ -21,8 +21,24 @@ figcaption {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.gallery {
+    display: flex;
+    margin: 0 -5%;
+
+    .image-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .horizontal-full img {
         aspect-ratio: unset;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .gallery {
+        margin: 0 -20%;
     }
 }

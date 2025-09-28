@@ -3,7 +3,7 @@
     {{ if or (eq (.Get "crop-horizontal-full") "true") (.Get "crop-horizontal-full") }}horizontal-full{{ end }}    
     {{ if or (eq (.Get "crop-horizontal") "true") (.Get "crop-horizontal") }}horizontal{{ end }}
 ">
-    <img src="{{ .Get "src" | safeURL }}" style="{{ if .Get "aspect-ratio" }}aspect-ratio: {{ .Get "aspect-ratio" | safeCSS }};{{ end }}"/>
+    <img src="{{ .Get "src" | safeURL }}" style="{{ if .Get "aspect-ratio" }}aspect-ratio: {{ .Get "aspect-ratio" | safeCSS }}; object-fit: cover{{ end }}; object-position: center center"/>
     {{ if .Get "caption" }}
     <figcaption>{{ .Get "caption" }}</figcaption>
     {{ end }}
