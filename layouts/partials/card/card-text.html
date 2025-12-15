@@ -15,7 +15,7 @@
                 {{ if .Site.Params.home_show_tags }}
                 &mdash;
                 {{ with .Params.tags }}
-                <div class="tags">
+                <div class="tags flex-1">
                     {{ range $i, $e := . }}
                         {{ if $i }} ◦ {{ end }}
                         <a href="{{ "/tags/" | relLangURL }}{{ $e | urlize }}">{{ $e }}</a>
